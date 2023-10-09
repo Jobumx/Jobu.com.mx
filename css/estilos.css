@@ -551,8 +551,7 @@ footer {
         justify-content: center; /* Centra los iconos horizontalmente */
         margin-top: 0; /* Elimina el margen superior */
     }
-
-    .social-media a {
+        .social-media a {
         margin-right: 10px; /* Añade un espacio entre los iconos */
     }
 }
