@@ -260,6 +260,27 @@ nav {
 }
 
 /* Questions */
+/* Estilo para la imagen dentro de la sección de preguntas */
+.questions .imagen-ampliable img {
+    max-width: 100%;
+    height: auto; /* Mantendrá la proporción original de la imagen */
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Efecto de transición al hacer clic */
+}
+
+/* Estilo para el enlace que amplía la imagen */
+.questions .imagen-ampliable {
+    display: inline-block; /* Para que el enlace ocupe solo el espacio necesario */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+/* Estilo para la imagen cuando se hace clic */
+.questions .imagen-ampliable img:hover {
+    transform: scale(1.1); /* Efecto de ampliación al hacer clic */
+}
 
 
 .questions {
@@ -270,7 +291,10 @@ nav {
 }
 
 .questions>img {
-    width: 550px;
+    width: 550px; /* Ajusta el tamaño máximo de la imagen al 100% del contenedor */
+    display: block; /* Elimina cualquier espacio adicional debajo de la imagen */
+    margin-top: 40px; /* Agrega espacio superior entre la imagen y el texto */
+    margin-bottom: 40px; /* Agrega espacio inferior entre la imagen y el texto */
 }
 
 .textos-questions {
@@ -353,12 +377,16 @@ nav {
 .results-text h4 {
     color: #fff;
     font-size: 40px;
+    text-align: left; /* Alinea el texto a la derecha */
+    margin-top: 20px; /* Agrega espacio en la parte superior */
 }
 
 .results-text p {
     color: #fff;
     font-weight: 300;
     margin: 20px 0;
+    text-align: left; /* Alinea el texto a la derecha */
+    margin-top: 20px; /* Agrega espacio en la parte superior */
 }
 
 
