@@ -318,6 +318,10 @@ nav {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+/* Aplica este estilo para quitar el subrayado de los enlaces */
+.number a {
+    text-decoration: none;
+}
 
 .numbers .number {
     width: 45%;
@@ -330,10 +334,12 @@ nav {
 
 .numbers .number h4 {
     color: #fff;
-    font-size: 50px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 300;
     margin-bottom: 20px;
+    /* Agrega esta línea para permitir el salto de palabras */
 }
+
 
 .numbers .number p {
     color: #f2f5fc;
