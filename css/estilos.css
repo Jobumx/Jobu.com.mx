@@ -277,9 +277,38 @@ nav {
     text-decoration: none; /* Elimina el subrayado del enlace */
 }
 
+#imagen-ampliada-contenedor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none; /* Inicialmente oculto */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#imagen-ampliada-contenedor img {
+    max-width: 90%;
+    max-height: 90vh;
+}
+
 /* Estilo para la imagen cuando se hace clic */
 .questions .imagen-ampliable img:hover {
     transform: scale(1.1); /* Efecto de ampliación al hacer clic */
+}
+/* Estilo para el fondo semitransparente */
+#imagen-ampliada-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Color de fondo semitransparente */
+    z-index: 999; /* Coloca el fondo sobre otros elementos */
+    display: none; /* Inicialmente oculto */
 }
 
 
@@ -613,11 +642,11 @@ footer {
 
     .enlaces-header {
         position: fixed;
-        background: #667db6;
+        background: #696875;
         /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+        background: -webkit-linear-gradient(to right, #696875, #15162B, #15162B, #696875);
         /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+        background: linear-gradient(to right, #696875, #15162B, #15162B, #696875);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         top: 0;
         right: 0;

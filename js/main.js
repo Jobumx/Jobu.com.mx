@@ -29,3 +29,21 @@ document.querySelectorAll(".hamburguer")[0].addEventListener("click", function()
 
     enlacesHeader.classList.toggle("menudos")
 })
+// Obtiene la miniatura y la imagen ampliada por su ID
+const miniatura = document.getElementById('miniatura');
+const imagenAmpliada = document.getElementById('imagen-ampliada');
+const fondoSemitransparente = document.getElementById('imagen-ampliada-fondo');
+
+// Agrega un evento clic a la miniatura para abrir la imagen ampliada
+miniatura.addEventListener('click', () => {
+    imagenAmpliada.style.display = 'block';
+    fondoSemitransparente.style.display = 'block';
+});
+
+// Agrega un evento clic al fondo semitransparente para cerrar la imagen ampliada
+fondoSemitransparente.addEventListener('click', () => {
+    imagenAmpliada.style.display = 'none';
+    fondoSemitransparente.style.display = 'none';
+});
+
+
