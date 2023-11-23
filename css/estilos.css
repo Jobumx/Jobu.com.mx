@@ -804,7 +804,7 @@ footer {
 @media screen and (max-width: 600px) {
     .contact-button {
         margin-right: 5px; /* Ajusta el valor según sea necesario */
-        padding: 10px 20px; /* Puedes ajustar el relleno para reducir el tamaño del botón */
+        padding: 8px 10px; /* Puedes ajustar el relleno para reducir el tamaño del botón */
     }
     
         .hamburguer>i {
