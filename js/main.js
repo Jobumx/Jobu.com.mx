@@ -47,3 +47,17 @@ fondoSemitransparente.addEventListener('click', () => {
 });
 
 
+// Obtén el elemento del botón
+const btnJobber = document.querySelector('.textos-header_1 .btn-jobber');
+
+// Añade un event listener para el evento 'mouseenter'
+btnJobber.addEventListener('mouseenter', () => {
+    // Añade la clase 'lifted' al botón cuando el ratón entra en el botón
+    btnJobber.classList.add('lifted');
+});
+
+// Añade un event listener para el evento 'mouseleave'
+btnJobber.addEventListener('mouseleave', () => {
+    // Remueve la clase 'lifted' cuando el ratón sale del botón
+    btnJobber.classList.remove('lifted');
+});

@@ -9,14 +9,52 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Encabezados */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    color: #1d273b;
+    color: #1d273b; /* Cambia el color según tu paleta de colores */
     font-weight: 300;
+}
+
+/* Texto principal */
+.textos-header_1 p,
+.textos-questions p,
+.results-text p {
+    color: #1d273b; /* Cambia el color según tu paleta de colores */
+    font-weight: 600; /* Puedes ajustar el peso de la fuente según sea necesario */
+}
+
+/* Enlaces */
+.textos-header_1 a,
+.textos-questions a,
+.results-text a {
+    color: #9F8E60; /* Cambia el color según tu paleta de colores */
+    text-decoration: none;
+    font-weight: 600; /* Puedes ajustar el peso de la fuente según sea necesario */
+}
+
+.textos-header_1 a:hover,
+.textos-questions a:hover,
+.results-text a:hover {
+    color: #5D6678; /* Cambia el color según tu paleta de colores */
+}
+
+/* Centrar texto en los artículos */
+.articulo {
+    text-align: center;
+}
+
+/* Estilo adicional para los encabezados dentro de los artículos */
+.articulo h3 {
+    margin-top: 20px; /* Puedes ajustar el margen superior según sea necesario */
+}
+
+.articulo p {
+    margin-top: 15px; /* Puedes ajustar el margen superior según sea necesario */
 }
 
 .contenedor {
@@ -96,10 +134,18 @@ nav {
     transition: ease-in-out 0.5s;
 }
 
+/* Estilo adicional para los enlaces */
 .nav .enlaces-header a {
-    color: #fff;
+    position: relative;
+    padding-bottom: 5px; /* Ajusta el espaciado entre el texto del enlace y la línea */
+    color: #fff; /* Color del texto (ajústalo según tus preferencias) */
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
     margin-left: 20px;
+}
+
+.nav .enlaces-header a:hover {
+    color: #9F8E60; /* Cambia el color al pasar el ratón (ajústalo según tus preferencias) */
 }
 
 .hamburguer {
@@ -139,7 +185,25 @@ nav {
         transform: scale(1);
     }
 }
+.portada {
+    position: relative;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+    display: flex;
+    align-items: center;
+}
 
+.logo-portada {
+    max-width: 200px; /* Ajusta el ancho máximo del logo según tus necesidades */
+    margin-left: 20px; /* Ajusta el margen izquierdo según tus necesidades */
+}
+
+.fondo-portada {
+    flex-grow: 1;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    /* Agrega cualquier estilo adicional para el fondo */
+}
 
 .textos-header_1 {
     margin: 0 0 0 30px;
@@ -185,6 +249,10 @@ nav {
     transition: background-color 0.3s ease-in-out;
     width: auto; /* Establece el ancho automático para igualar el tamaño */
     margin: 0 10px; /* Agrega margen horizontal entre los botones si es necesario */
+}
+/* Estilo para el botón cuando está levantado */
+.textos-header_1 .btn-jobber.lifted {
+    transform: translateY(-5px); /* Ajusta la distancia que se levanta (puedes ajustar según tus preferencias) */
 }
 /* Estilo adicional si es necesario */
 .btn-jobber:nth-child(1) {
@@ -732,4 +800,14 @@ footer {
     .social-media a {
         margin-right: 10px; /* Añade un espacio entre los iconos */
     }
+}
+@media screen and (max-width: 600px) {
+    .contact-button {
+        margin-right: 5px; /* Ajusta el valor según sea necesario */
+        padding: 4px 8px; /* Puedes ajustar el relleno para reducir el tamaño del botón */
+    }
+    
+        .hamburguer>i {
+            color: #9F8E60; /* Cambia este color al blanco que desees */
+        }
 }
